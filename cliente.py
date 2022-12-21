@@ -1,6 +1,6 @@
 import socket
-#from gpiozero import LED
-#from gpiozero import Buzzer
+from gpiozero import LED
+from gpiozero import Buzzer
 from time import sleep
 from signal import pause
 import adafruit_dht
