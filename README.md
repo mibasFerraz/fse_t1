@@ -1,6 +1,6 @@
-# Automatic Grind
+# Sistema Distribuído de Automação Predial
 
-**Conteúdo da Disciplina**: Final<br>
+**Conteúdo da Disciplina**: Trabalho 1<br>
 
 ## Aluno
 | Matrícula   |         Aluno          |
