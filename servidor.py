@@ -27,9 +27,9 @@ while True:
         objeto = input("O que voce deseja desligar?(projetor/ lampada1/ lampada2/ arcondicionado/ sensorDePresenca/ sensorDeFumaca/ sensorDePorta/ sensorDeJanela)\n")        
         tcp.send(str(objeto).encode())
     
-    sleep(10)
-    frase = tcp.recv(1024)
-    print(frase)
+    #sleep(10)
+    #frase = tcp.recv(1024)
+    #print(frase)
     
 print('Volte sempre.')
 tcp.close()

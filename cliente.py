@@ -7,7 +7,6 @@ import adafruit_dht
 
 def printa(frase):
     print(frase)
-    #tcp.send(str(frase).encode())
 
 def ligaLed(porta):
     led = LED(porta)
@@ -59,23 +58,23 @@ while True:
                 
         if inicio == 'ligar':
             if objeto == 'projetor':
-                #ligaLed(25)
+                ligaLed(25)
                 printa('Projetor ligado.')
                 
             if objeto == "lampada1":
                 ligaLed(18)
-                print("Lampada 1 ligada.")
+                printa("Lampada 1 ligada.")
                 
             if objeto == 'lampada2':
                 ligaLed(23)
-                print("Lampada 2 ligada.")
+                printa("Lampada 2 ligada.")
                         
             if objeto == "arcondicionado":
                 ligaLed(24)
-                print("Arcondicionado ligado.")
+                printa("Arcondicionado ligado.")
             
             if objeto == "sensorDePresenca":
-                print("sensorDePresenca")
+                printa("sensorDePresenca")
             
             if objeto == "sensorDeFumaca":
                 ligaLed(1)
@@ -91,16 +90,19 @@ while True:
         if inicio == "desligar":        
             if objeto == "projetor":
                 desligaLed(25)
-                print("Projetor desligado.")
+                printa("Projetor desligado.")
                 
             if objeto == "lampada1":
                 desligaLed(18)
+                printa("Lampada1 desligada.")            
                             
             if objeto == 'lampada2':
                 desligaLed(23)  
+                printa("Lampada2 desligada.")
                         
             if objeto == "arcondicionado":
                 desligaLed(24)
+                printa("Ar condicionado desligado.")
                 
             if objeto == "sensorDePresenca":
                 print("sensorDePresenca")
@@ -108,6 +110,7 @@ while True:
             if objeto == "sensorDeFumaca":
                 desligaLed(1)
                 desligaAlarme(8)
+                printa("Sensor de fumaca desligado.")
                 
             if objeto == "sensorDePorta":
                 print("sensorDePorta")    
